@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Начало",
+    "about": "О нас",
+    "login": "Вход",
+    "register": "Регистрация"
+  },
+  "values": {
+    "voluntary": {
+      "heading": "Добровольные пожертвования",
+      "content": "Строим добровольную платформу пожертвований для друг друга."
+    },
+    "proactive": {
+      "heading": "Активность",
+      "content": "Платформа для активных донатов. Мы строим платформу, где каждый может обратиться за помощью."
+    },
+    "transparent": {
+      "heading": "Прозрачность",
+      "content": "Анкету для платформы может оформить любой нуждающийся. Вам достаточно показать доказательства, которые можно загрузить на сайт."
+    },
+    "respect": {
+      "heading": "Уважение",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "expertise": {
+      "heading": "Экспертность",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.."
+    },
+    "privacy": {
+      "heading": "Безопастность",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "awareness": {
+      "heading": "Осознанность",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  }
+}

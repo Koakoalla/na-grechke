@@ -1,11 +1,11 @@
 import { GetStaticProps } from 'next'
-import IndexPage from '../components/IndexPage'
+import AboutPage from '../components/about/AboutPage'
 import { serverSideTranslations } from '../common/useNextLocale'
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
-    i18nResources: await serverSideTranslations(locale, ['common']),
+    i18nResources: await serverSideTranslations(locale, ['common', 'about']),
   },
 })
 
-export default IndexPage
+export default AboutPage
