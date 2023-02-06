@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Container, Grid, TextField, Button } from '@material-ui/core'
 
-import Layout from '../../components/layout/Layout'
+import Layout from '../../layout/Layout'
 
 export default function LoginPage() {
   const { t } = useTranslation()

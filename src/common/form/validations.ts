@@ -1,0 +1,50 @@
+import { setLocale, string } from 'yup'
+import { TOptions } from 'i18next'
+import { TFunction } from 'next-i18next'
+
+export type TranslatableField = (string | undefined) | { key: string; values?: TOptions } 
+export const translateError = (
+  field: TranslatableField,
+  translate: TFunction,
+): string | undefined => {
+  if (!field) {
+    return undefined
+  }
+  if (typeof field === 'string') {
+    return translate(field)
+  }
+  return translate(field.key, field.values)
+}
+
+export const customValidators = {
+  passwordMin: ({ min }: { min: number }) => ({
+    key: 'validation:password-min',
+    values: { min },
+  }),
+  phone: () => ({ key: 'validation:phone' }),
+  name: () => ({ key: 'validation:invalid' }),
+}
+
+setLocale({
+  mixed: {
+    default: 'validation:invalid',
+    required: 'validation:required',
+  },
+  string: {
+    min: ({ min }: { min: number }) => ({
+      key: 'validation:field-too-short',
+      values: { min },
+    }),
+    max: ({ max }: { max: number }) => ({
+      key: 'validation:field-too-long',
+      values: { max },
+    }),
+    email: 'validation:email',
+  },
+})
+
+export const phoneRegex = /^\+?\d+$/
+export const noNumbersRegex = /^[^\d!@#$%^&*()\\/'"_]*$/gi
+export const phone = string().trim().matches(phoneRegex, customValidators.phone).min(10).max(25)
+export const name = string().trim().matches(noNumbersRegex, customValidators.name).min(2).max(50)
+export const companyName = string().trim().min(2).max(50)

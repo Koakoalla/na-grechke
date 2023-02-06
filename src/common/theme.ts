@@ -1,7 +1,6 @@
 import { pink } from '@material-ui/core/colors'
 import { createTheme, responsiveFontSizes } from '@material-ui/core/styles'
 
-// https://material-ui.com/customization/default-theme/#default-theme
 const theme = createTheme({
   palette: {
     type: 'light',
